@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/FFFF0h/Task-Parallel-Library
+	branch = master
+	commit = 4b149583d23bab26dc9b4bac8ef22d2161338d36
+	parent = af2fc08223abe350512e19c9e5ddfc1ccab60bc9
+	cmdver = 0.3.0
