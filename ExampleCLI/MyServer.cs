@@ -1,5 +1,5 @@
 ﻿using System;
-using NamedPipeWrapper;
+using System.IO.NamedPipes;
 
 namespace ExampleCLI
 {

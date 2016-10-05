@@ -4,10 +4,9 @@ using System.IO.Pipes;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using NamedPipeWrapper.IO;
-using NamedPipeWrapper.Threading;
+using System.IO;
 
-namespace NamedPipeWrapper
+namespace System.IO.NamedPipes
 {
     /// <summary>
     /// Wraps a <see cref="NamedPipeClientStream"/>.

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamedPipeWrapper", "NamedPipeWrapper\NamedPipeWrapper.csproj", "{73152691-3CDE-46DF-8D04-7117747DFFE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.IO.NamedPipes", "NamedPipeWrapper\System.IO.NamedPipes.csproj", "{73152691-3CDE-46DF-8D04-7117747DFFE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{5E77C76A-E765-445A-96E5-681CB5B9A68B}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Threading.Tasks.Net35", "lib\Task-Parallel-Library\System.Threading.Tasks.Net35.csproj", "{DCB5D745-525C-46A1-BFC0-E12F87AB6165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamedPipeWrapper.Net35", "NamedPipeWrapper\NamedPipeWrapper.Net35.csproj", "{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.IO.NamesPipes.Net35", "NamedPipeWrapper\System.IO.NamesPipes.Net35.csproj", "{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

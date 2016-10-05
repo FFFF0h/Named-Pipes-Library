@@ -59,9 +59,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NamedPipeWrapper\NamedPipeWrapper.csproj">
+    <ProjectReference Include="..\NamedPipeWrapper\System.IO.NamedPipes.csproj">
       <Project>{73152691-3CDE-46DF-8D04-7117747DFFE7}</Project>
-      <Name>NamedPipeWrapper</Name>
+      <Name>System.IO.NamedPipes</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Named Pipe Wrapper library")]
+[assembly: AssemblyTitle("Named Pipes Wrapper library")]
 [assembly: AssemblyDescription("A simple, easy to use, strongly-typed wrapper around .NET named pipes.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("NamedPipeWrapper")]
+[assembly: AssemblyProduct("System.IO.NamedPipes")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
