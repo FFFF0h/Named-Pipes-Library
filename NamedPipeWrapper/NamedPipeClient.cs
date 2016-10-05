@@ -16,7 +16,7 @@ namespace NamedPipeWrapper
     public class NamedPipeClient<TReadWrite> : NamedPipeClient<TReadWrite, TReadWrite> where TReadWrite : class
     {
         /// <summary>
-        /// Constructs a new <c>NamedPipeClient</c> to connect to the <see cref="NamedPipeNamedPipeServer{TReadWrite}"/> specified by <paramref name="pipeName"/>.
+        /// Constructs a new <c>NamedPipeClient</c> to connect to the <see cref="NamedPipeServer{TReadWrite}"/> specified by <paramref name="pipeName"/>.
         /// </summary>
         /// <param name="pipeName">Name of the server's pipe</param>
         /// <param name="serverName">server name default is local.</param>
@@ -69,7 +69,7 @@ namespace NamedPipeWrapper
         private string _serverName { get; set; }
 
         /// <summary>
-        /// Constructs a new <c>NamedPipeClient</c> to connect to the <see cref="NamedPipeServer{TRead, TWrite}"/> specified by <paramref name="pipeName"/>.
+        /// Constructs a new <c>NamedPipeClient</c> to connect to the <see cref="NamedPipeServer{TReadWrite}"/> specified by <paramref name="pipeName"/>.
         /// </summary>
         /// <param name="pipeName">Name of the server's pipe</param>
         /// <param name="serverName">the Name of the server, default is  local machine</param>
@@ -114,31 +114,53 @@ namespace NamedPipeWrapper
 
         #region Wait for connection/disconnection
 
+        /// <summary>
+        /// Waits for connection.
+        /// </summary>
         public void WaitForConnection()
         {
             _connected.WaitOne();
         }
 
+        /// <summary>
+        /// Waits for connection.
+        /// </summary>
+        /// <param name="millisecondsTimeout">The milliseconds timeout.</param>
         public void WaitForConnection(int millisecondsTimeout)
         {
             _connected.WaitOne(millisecondsTimeout);
         }
 
+        /// <summary>
+        /// Waits for connection.
+        /// </summary>
+        /// <param name="timeout">The timeout.</param>
         public void WaitForConnection(TimeSpan timeout)
         {
             _connected.WaitOne(timeout);
         }
 
+        /// <summary>
+        /// Waits for disconnection.
+        /// </summary>
         public void WaitForDisconnection()
         {
             _disconnected.WaitOne();
         }
 
+        /// <summary>
+        /// Waits for disconnection.
+        /// </summary>
+        /// <param name="millisecondsTimeout">The milliseconds timeout.</param>
         public void WaitForDisconnection(int millisecondsTimeout)
         {
             _disconnected.WaitOne(millisecondsTimeout);
         }
 
+        /// <summary>
+        /// Waits for disconnection.
+        /// </summary>
+        /// <param name="timeout">The timeout.</param>
         public void WaitForDisconnection(TimeSpan timeout)
         {
             _disconnected.WaitOne(timeout);

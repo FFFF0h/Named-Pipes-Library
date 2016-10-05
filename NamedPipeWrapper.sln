@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamedPipeWrapper", "NamedPipeWrapper\NamedPipeWrapper.csproj", "{73152691-3CDE-46DF-8D04-7117747DFFE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{5E77C76A-E765-445A-96E5-681CB5B9A68B}"
@@ -8,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleCLI", "ExampleCLI\ExampleCLI.csproj", "{82BCEFD9-194E-4FF7-A28B-CA1AE2A87BAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleGUI", "ExampleGUI\ExampleGUI.csproj", "{199E5EF6-D1FA-4662-BDD4-1D49A747AFF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{46BC1B3A-F5A5-4F25-8C61-31E31EA52E57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{7EB834DF-FEC8-4635-902E-CC00B09DD529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Threading.Tasks.Net35", "lib\Task-Parallel-Library\System.Threading.Tasks.Net35.csproj", "{DCB5D745-525C-46A1-BFC0-E12F87AB6165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamedPipeWrapper.Net35", "NamedPipeWrapper\NamedPipeWrapper.Net35.csproj", "{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,8 +72,33 @@ Global
 		{199E5EF6-D1FA-4662-BDD4-1D49A747AFF9}.Release|Mixed Platforms.Build.0 = Release|x86
 		{199E5EF6-D1FA-4662-BDD4-1D49A747AFF9}.Release|x86.ActiveCfg = Release|x86
 		{199E5EF6-D1FA-4662-BDD4-1D49A747AFF9}.Release|x86.Build.0 = Release|x86
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165}.Release|x86.ActiveCfg = Release|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AD35BB1A-3DF0-40E2-82E0-58A1050B5DC3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82BCEFD9-194E-4FF7-A28B-CA1AE2A87BAC} = {46BC1B3A-F5A5-4F25-8C61-31E31EA52E57}
+		{199E5EF6-D1FA-4662-BDD4-1D49A747AFF9} = {46BC1B3A-F5A5-4F25-8C61-31E31EA52E57}
+		{DCB5D745-525C-46A1-BFC0-E12F87AB6165} = {7EB834DF-FEC8-4635-902E-CC00B09DD529}
 	EndGlobalSection
 EndGlobal

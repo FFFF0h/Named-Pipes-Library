@@ -35,7 +35,9 @@ namespace UnitTests
         private int _expectedHash;
         private TestCollection _actualData;
         private int _actualHash;
+#pragma warning disable 414
         private bool _clientDisconnected;
+#pragma warning restore 414
 
         private DateTime _startTime;
 

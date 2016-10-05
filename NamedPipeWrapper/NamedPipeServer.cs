@@ -22,9 +22,10 @@ namespace NamedPipeWrapper
         }
 
         /// <summary>
-        /// Constructs a new <c>NamedPipeServer</c> object that listens for client connections on the given <paramref name="pipeName"/>.
+        /// Constructs a new <c>NamedPipeServer</c> object that listens for client connections on the given <paramref name="pipeName" />.
         /// </summary>
         /// <param name="pipeName">Name of the pipe to listen on</param>
+        /// <param name="pipeSecurity">Access control and audit security for the pipe.</param>
         public NamedPipeServer(string pipeName, PipeSecurity pipeSecurity)
             : base(pipeName, pipeSecurity)
         {
@@ -67,12 +68,15 @@ namespace NamedPipeWrapper
         private int _nextPipeId;
 
         private volatile bool _shouldKeepRunning;
+#pragma warning disable 414
         private volatile bool _isRunning;
+#pragma warning restore 414
 
         /// <summary>
-        /// Constructs a new <c>NamedPipeServer</c> object that listens for client connections on the given <paramref name="pipeName"/>.
+        /// Constructs a new <c>NamedPipeServer</c> object that listens for client connections on the given <paramref name="pipeName" />.
         /// </summary>
-        /// <param name="pipeName">Name of the pipe to listen on</param>
+        /// <param name="pipeName">Name of the pipe to listen on.</param>
+        /// <param name="pipeSecurity">Access control and security for the pipe.</param>
         public Server(string pipeName, PipeSecurity pipeSecurity)
         {
             _pipeName = pipeName;
